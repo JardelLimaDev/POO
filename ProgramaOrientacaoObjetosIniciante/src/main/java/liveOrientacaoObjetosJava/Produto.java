@@ -6,6 +6,7 @@ public class Produto {
 	private Long id;
 	private String nome;
 	private BigDecimal valor;
+	private String dataValidade;
 	
 	public Long getId() {
 		return id;
@@ -28,6 +29,12 @@ public class Produto {
 	@Override
 	public String toString() {
 		return "Produto [id=" + id + ", nome=" + nome + ", valor=" + valor + "]";
+	}
+	public String getDataValidade() {
+		return dataValidade;
+	}
+	public void setDataValidade(String dataValidade) {
+		this.dataValidade = dataValidade;
 	}
 	
 	
